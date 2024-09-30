@@ -3,14 +3,36 @@
     padding: 0px;
 }
 
-header{
+/* Cambiar el background a transparente */
+header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.517);
+    background-color:rgba(0, 0, 0, 0.407); /* Ajuste aquí */
     padding: 30px;
     text-align: center;
+    z-index: 1;
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    justify-content:space-evenly;
 }
+
 .header-links{
+    justify-content: space-evenly;
+}
+
+.header-links a{
     text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.header-links a:hover{
+    color: rgb(212, 103, 103);
+}
+
+.number{
+    color: white;
+    font-size: 22px;
 }
 
 

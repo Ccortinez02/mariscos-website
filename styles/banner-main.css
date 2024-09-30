@@ -1,11 +1,34 @@
-.banner-main{
-
+/* banner-main.css */
+.banner-imagen {
+    width: 100%;
+    height: 1000px; /* La imagen cubrirá toda la altura de la pantalla */
+    background-image: url('/images/banner-principal.jpg');
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; /* Flexbox para alinear contenido */
+    flex-direction: column;
+    justify-content: top; /* Centrar contenido verticalmente */
+    align-items: center; /* Centrar contenido horizontalmente */
 }
 
-.banner-main img{
-    z-index: 0;
-}
-
-.banner-main h1{
+.banner-main h1 {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 90px;
     z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agregar sombra al texto para mayor visibilidad */
+}
+
+.banner-main button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    z-index: 1;
+    margin-left: 50px;
+    border-radius: 5px;
+    border: 0px;
 }

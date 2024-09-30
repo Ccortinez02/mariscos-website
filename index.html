@@ -6,37 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariscos JP</title>
     <link rel="stylesheet" href="/styles/styles_header.css">
+    <link rel="stylesheet" href="/styles/banner-main.css">
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo"></div>
-        <div class="header-links">
-            <a href="#">Inicio</a>
-            <a href="">Cotiza tu Pedido</a>
-            <a href="">Carrito de Compras</a>
+    <!-- Contenedor principal que incluye la imagen de fondo, header y banner -->
+    <div class="banner-imagen">
+        <!-- No necesitamos <img> ya que usaremos CSS para el fondo -->
+        <header>
+            <div class="logo"><img src="" alt="logo"></div>
+            <div class="header-links">
+                <a href="">Cotiza tu Pedido</a>
+            </div>
+            <div class="number">+569 4289 9833</div>
+        </header>
+        <!-- Banner principal con texto y botón -->
+        <div class="banner-main">
+            <h1>Los mejores mariscos del mundo <span>al alcance de un click</span></h1>
+            <button>Cotiza aquí</button>
         </div>
-        <div class="none-space"></div>
-    </header>
-    <div class="banner-main">
-        <img src="/images/banner-principal.jpg" alt="" width="100%" height="100%">
-        <h1>Los mejores mariscos del mundo <span>al alcance de un click</span></h1>
-        <button>Cotiza aqui</button>
     </div>
+    <!-- Main content -->
     <main>
-        <!-- todos los elementos de la pagina-->
-        <div class="carrusel"></div>
-        <div class="top-sell"></div>
-        <div class="nosotros"></div>
+        <div class="carrusel">
+            <h2>algunos de nuestros productos son</h2>
+            <div class="cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">FLIP CARD</p>
+                            <p>Hover Me</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">BACK</p>
+                            <p>Leave Me</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">FLIP CARD</p>
+                            <p>Hover Me</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">BACK</p>
+                            <p>Leave Me</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="title">FLIP CARD</p>
+                            <p>Hover Me</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p class="title">BACK</p>
+                            <p>Leave Me</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-sell">
+            <h2>productos top</h2>
+        </div>
+        <div class="nosotros">
+            <h2>Nuestra Historia</h2>
+            <div></div>
+            <h2>Quienes somos</h2>
+            <div></div>
+            <h2>Donde nos puedes encontrar</h2>
+        </div>
     </main>
+    <!-- Footer -->
     <footer>
         <div>
-            <div class="info"></div>
-            <div class="redes"></div>
-            <div class="contacto"></div>
+            <div class="info">
+                <ul>
+                    <li>Terminos y Condiciones</li>
+                    <li>Servicio de Entregas</li>
+                    <li>Garantias</li>
+                    <li>Mas Informacion</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h3>Nuestras redes</h3>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+            <div class="contacto">
+                <h3>Contactanos</h3>
+                <h3>Numero telefonico</h3>
+                <h3>correo</h3>
+            </div>
         </div>
-        <div class="copyright"></div>
+        <div class="copyright">Todos los derechos Reservados</div>
     </footer>
 </body>
+
 
 </html>
