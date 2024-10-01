@@ -15,12 +15,16 @@
 .banner-main h1 {
     position: relative;
     color: white;
-    font-size: 3rem;
+    font-size: 5rem;
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 90px;
     z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agregar sombra al texto para mayor visibilidad */
+}
+
+.banner-main h1 span{
+    color: rgb(117, 179, 250);
 }
 
 .banner-main button {
@@ -29,6 +33,14 @@
     font-size: 1rem;
     z-index: 1;
     margin-left: 50px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 0px;
+    background-color: rgb(117, 179, 250);
+    color: white;
+    font-size: 30px;
+}
+
+.banner-main button:hover{
+    background-color: white;
+    color: rgb(117, 179, 250);
 }
