@@ -9,11 +9,12 @@ header {
     position: relative;
     margin-top: 0px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
 }
 
 .header-links{
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-links a{

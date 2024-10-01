@@ -1,9 +1,10 @@
 .slide-img{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display:flex;
 }
 
 .slide-img img{
-
+    display: block;
+    height: 300px;
+    width: 400px;
+    
 }
