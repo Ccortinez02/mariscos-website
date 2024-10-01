@@ -2,7 +2,7 @@
 /* Cambiar el background a transparente */
 header {
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.407); /* Ajuste aquí */
+    background: linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.027)); /* Ajuste aquí */
     padding: 30px;
     text-align: center;
     z-index: 1;

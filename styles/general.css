@@ -1,19 +1,22 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
+    padding-top: 30px;
 }
 
-body{
-    width: 100%;
-    align-items: center;
+body {
+    text-align: center;
 }
 
-main{
-    
+main {
+    max-width: 900px;
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    margin: 20px auto; /* Centra horizontalmente */
 }
