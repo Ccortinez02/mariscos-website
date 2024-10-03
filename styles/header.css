@@ -2,7 +2,7 @@
 /* Cambiar el background a transparente */
 header {
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.027)); /* Ajuste aquí */
+    background: linear-gradient(rgba(0, 0, 0, 0.623),rgba(0, 0, 0, 0.137) ); /* Ajuste aquí */
     padding: 30px;
     text-align: center;
     z-index: 1;
@@ -13,14 +13,16 @@ header {
 }
 
 .header-links{
+    display: flex;
+    width: 900px;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header-links a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
+    width: 100%;
 }
 
 .header-links a:hover{
