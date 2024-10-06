@@ -30,8 +30,9 @@ header {
 }
 
 .number a i{
-    color: #25d366;
-    font-size: 40px;
+    color: white;
+    font-size: 35px;
+    padding-top: 5px;
 }
 
 

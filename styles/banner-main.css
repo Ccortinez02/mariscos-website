@@ -38,6 +38,7 @@
     background-color: rgb(117, 179, 250);
     color: white;
     font-size: 34px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .banner-main button:hover{
