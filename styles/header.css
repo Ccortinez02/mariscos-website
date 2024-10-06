@@ -29,9 +29,9 @@ header {
     color: rgb(117, 179, 250);
 }
 
-.number{
-    color: white;
-    font-size: 22px;
+.number a i{
+    color: #25d366;
+    font-size: 40px;
 }
 
 
