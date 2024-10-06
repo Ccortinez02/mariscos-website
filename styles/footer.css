@@ -5,3 +5,12 @@
     justify-content:space-evenly;
     background-color: rgb(117, 179, 250);
 }
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    color: rgb(45, 115, 245);
+}
