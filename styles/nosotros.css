@@ -1,13 +1,3 @@
-.slide-img{
-    display:flex;
-}
-
-.slide-img img{
-    display: block;
-    height: 300px;
-    width: 400px;
-    
-}
 
 .mapa{
     justify-content: center;
@@ -18,9 +8,4 @@
 
 iframe{
     width: 100%;
-}
-
-
-.slide-img .info-historia{
-    padding: 30px;
 }

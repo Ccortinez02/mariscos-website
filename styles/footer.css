@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content:space-evenly;
-    background-color: rgb(117, 179, 250);
+    background-color: #237179;
 }
 
 ul li a{
@@ -12,5 +12,5 @@ ul li a{
 }
 
 ul li a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
