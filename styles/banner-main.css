@@ -19,7 +19,6 @@
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 20rem;
-    z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agregar sombra al texto para mayor visibilidad */
 }
 
