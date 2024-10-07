@@ -1,3 +1,86 @@
-.menu{
-    flex: auto;
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Estructura del grid */
+section.menu {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Imagen más grande que las tarjetas */
+    grid-template-rows: 1fr 1fr; /* 2 filas para el layout */
+    gap: 20px; /* Espacio entre elementos */
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar la sección */
+    padding: 20px;
+}
+
+/* Imagen principal */
+.imagen-menu {
+    grid-column: 1 / 2; /* Primera columna */
+    grid-row: 1 / 3; /* Ocupa ambas filas */
+    border-radius: 20px;
+    overflow: hidden; /* Para que la imagen no se salga */
+}
+
+.imagen-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para Mariscos y Pescados */
+.mariscos, .pescados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+}
+
+/* Colores de las tarjetas */
+.mariscos {
+    background-color: #80c2c8; /* Color de mariscos */
+}
+
+.pescados {
+    background-color: #b5dce6; /* Color de pescados */
+}
+
+/* Distribución de las tarjetas */
+.mariscos {
+    grid-column: 2 / 3; /* Segunda columna */
+    grid-row: 1 / 2; /* Primera fila */
+}
+
+.pescados {
+    grid-column: 2 / 3; /* Segunda columna */
+    grid-row: 2 / 3; /* Segunda fila */
+}
+
+/* Estilo para los títulos */
+.mariscos h2, .pescados h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo para los botones */
+.mariscos button, .pescados button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.mariscos button:hover, .pescados button:hover {
+    background-color: #f1f1f1;
 }
