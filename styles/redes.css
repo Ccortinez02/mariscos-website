@@ -10,3 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.icon-redes a i:hover{
+    color: white;
+}

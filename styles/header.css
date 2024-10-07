@@ -29,6 +29,7 @@ header {
 
 .header-links a:hover{
     color: rgb(117, 179, 250);
+    text-decoration: underline rgb(117, 179, 250);
 }
 
 .number a i{
@@ -47,5 +48,10 @@ header {
 
 .dropdown-item{
     z-index: 2;
+}
+
+.logo .fa-solid{
+    font-size: 3rem;
+    color: white;
 }
 
