@@ -28,7 +28,7 @@ header {
 
 
 .header-links a:hover{
-    color: rgb(117, 179, 250);
+    color: #b5dce6;
     text-decoration: underline rgb(117, 179, 250);
 }
 
