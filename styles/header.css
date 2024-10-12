@@ -28,8 +28,8 @@ header {
 
 
 .header-links a:hover{
-    color: #b5dce6;
-    text-decoration: underline rgb(117, 179, 250);
+    color: #80c2c8;
+    text-decoration: underline #80c2c8;
 }
 
 .number a i{

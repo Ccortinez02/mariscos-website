@@ -23,7 +23,7 @@
 }
 
 .banner-main h1 span{
-    color: #b5dce6;
+    color: #80c2c8;
 }
 
 .banner-main button {
@@ -34,7 +34,7 @@
     margin-left: 50px;
     border-radius: 15px;
     border: 0px;
-    background-color: #b5dce6;
+    background-color: #80c2c8;
     color: white;
     font-size: 34px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -42,5 +42,5 @@
 
 .banner-main button:hover{
     background-color: white;
-    color: #b5dce6;
+    color: #80c2c8;
 }

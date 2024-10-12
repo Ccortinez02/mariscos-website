@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content:space-evenly;
-    background-color: #6db8de;
+    background-color: #80c2c8;
 }
 
 ul li a{
@@ -13,4 +13,9 @@ ul li a{
 
 ul li a:hover{
     color: rgb(0, 0, 0);
+}
+
+.footer div{
+    width: 300px;
+    text-align: center;
 }
