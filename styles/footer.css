@@ -19,3 +19,7 @@ ul li a:hover{
     width: 300px;
     text-align: center;
 }
+
+.info ul li{
+    text-align:start;
+}
