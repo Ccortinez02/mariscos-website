@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 300px;
     flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
 }
 
@@ -23,6 +23,7 @@ ul li a:hover {
 .footer div {
     width: 300px;
     text-align: center;
+    max-width: 300px;
 }
 
 .info {
@@ -32,6 +33,7 @@ ul li a:hover {
 .info ul {
     list-style-position: inside; /* Asegura que los bullets sigan dentro del contenedor centrado */
     padding: 0; /* Elimina el padding que puede descentrar la lista */
+    margin-left: 70px;
 }
 
 .info ul li {
@@ -68,9 +70,11 @@ ul li a:hover {
     .footer div {
         width: 100%; /* Los divs ocuparán el 100% del ancho de la pantalla */
         margin-bottom: 20px; /* Espacio entre los divs en pantallas pequeñas */
+        margin-left: 25%;
     }
 
     .icon-redes {
-        justify-content: center; /* Centra los íconos en móviles */
+        max-width: 200px!important;
+        margin-left: 50px!important;
     }
 }
