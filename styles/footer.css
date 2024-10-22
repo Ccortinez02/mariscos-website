@@ -1,25 +1,76 @@
-.footer{
+.footer {
     padding-top: 30px;
     width: 100%;
     display: flex;
-    justify-content:space-evenly;
-    background-color: #80c2c8;
+    justify-content: space-evenly;
+    background-image: url(/images/footer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: black;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: rgb(0, 0, 0);
 }
 
-.footer div{
+.footer div {
     width: 300px;
     text-align: center;
 }
 
-.info ul li{
-    text-align:start;
+.info {
+    text-align: center; /* Centra el contenido dentro de .info */
+}
+
+.info ul {
+    list-style-position: inside; /* Asegura que los bullets sigan dentro del contenedor centrado */
+    padding: 0; /* Elimina el padding que puede descentrar la lista */
+}
+
+.info ul li {
+    display: inline-block; /* Asegura que los ítems de la lista se comporten correctamente */
+    text-align: left; /* Mantiene el texto de los elementos alineado a la izquierda */
+    width: 100%; /* Asegura que los ítems ocupen el ancho completo del contenedor */
+}
+
+
+.redes a i {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 38px;
+}
+
+.icon-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-redes a i:hover {
+    color: white;
+}
+
+/* Media query para pantallas más pequeñas como móviles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Coloca los divs en una sola columna */
+        height: 900px; /* Ajusta la altura automáticamente para el contenido */
+    }
+
+    .footer div {
+        width: 100%; /* Los divs ocuparán el 100% del ancho de la pantalla */
+        margin-bottom: 20px; /* Espacio entre los divs en pantallas pequeñas */
+    }
+
+    .icon-redes {
+        justify-content: center; /* Centra los íconos en móviles */
+    }
 }
