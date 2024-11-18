@@ -51,3 +51,10 @@ header {
     color: white;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #80c2c8;
+}

@@ -21,3 +21,26 @@ main {
     width: 60%;
     margin: 20px auto; /* Centra horizontalmente */
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-imagen {
+        height: auto; /* Ajuste automático de la altura */
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Otros ajustes para optimizar la visualización */
+}
