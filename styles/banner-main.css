@@ -44,3 +44,12 @@
     background-color: white;
     color: #80c2c8;
 }
+
+@media (max-width: 764px) {
+    .banner-main h1{
+        margin-top: 15rem;
+    }
+    .banner-imagen{
+        height: 1000px!important;
+    }
+}
