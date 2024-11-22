@@ -16,48 +16,75 @@
 <!-- recetas.html -->
 <body>
     <div class="banner-imagen">
-        <header> <!-- mejorar el header, agregar mas links y hacerlo mas estetico-->
-            <div class="logo"><i class="fa-solid fa-fish"></i></div>
-            <div class="header-links">
+        <header>
+            <div class="logo"><i class="fa-solid fa-fish"></i> Mariscos JP</div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav class="header-links">
                 <a href="/index.html">Inicio</a>
                 <a href="/templates/nosotros.html">Nosotros</a>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="mayoristaDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Mayorista
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="mayoristaDropdown">
-                        <li><a class="dropdown-item text-dark" href="#">Surtido de Mariscos</a></li>
-                        <li><a class="dropdown-item text-dark" href="#">Choritos</a></li>
-                        <li><a class="dropdown-item text-dark" href="#">Jaiba</a></li>
-                        <li><a class="dropdown-item text-dark" href="#">Camarones</a></li>
-                        <!-- nacional y ecuatoriano display-->
-                        <li><a class="dropdown-item text-dark" href="#">Calamar</a></li>
+                <div class="nav-item">
+                    <span class="nav-link" id="nav-link-display">Mayorista</span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Surtido de Mariscos</a></li>
+                        <li><a class="dropdown-item" href="#">Choritos</a></li>
+                        <li><a class="dropdown-item" href="#">Jaiba</a></li>
+                        <li><a class="dropdown-item" href="#">Camarones</a></li>
+                        <li><a class="dropdown-item" href="#">Calamar</a></li>
                     </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="mayoristaDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Minorista
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="mayoristaDropdown">
-                        <li><a class="dropdown-item text-dark" href="#">Surtido de Mariscos</a></li>
-                        <li><a class="dropdown-item text-dark" href="#">Choritos</a></li>
-                        <li><a class="dropdown-item text-dark" href="#">Jaiba</a></li>
-                        <li><a class="dropdown-item text-dark" href="#">Camarones</a></li>
-                        <!-- nacional y ecuatoriano display-->
-                        <li><a class="dropdown-item text-dark" href="#">Calamar</a></li>
+                </div>
+                <div class="nav-item">
+                    <span class="nav-link">Minorista</span>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Surtido de Mariscos</a></li>
+                        <li><a class="dropdown-item" href="#">Choritos</a></li>
+                        <li><a class="dropdown-item" href="#">Jaiba</a></li>
+                        <li><a class="dropdown-item" href="#">Camarones</a></li>
+                        <li><a class="dropdown-item" href="#">Calamar</a></li>
                     </ul>
-                </li>
+                </div>
                 <a href="/templates/despachos">Despachos</a>
-            </div>
-            <div class="number"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
+            </nav>
+            <div class="number"><a href="https://wa.me/56912345678"><i class="fa-brands fa-whatsapp"></i></a></div>
         </header>
-        <main>
-            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla et velit culpa voluptatum numquam perspiciatis, neque expedita a eum quas magni. Maiores praesentium accusantium laborum, iure nemo iste distinctio dignissimos.</div>
-            <div></div>
-            <div></div>
+        <script>
+            // JavaScript para el menú hamburguesa
+            function toggleMenu() {
+                document.querySelector('.header-links').classList.toggle('active');
+            }
 
+            // JavaScript para los menús desplegables
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function () {
+                    this.parentElement.classList.toggle('open');
+                });
+            });
+
+        </script>
+        <main>
+            <section class="about-us py-5">
+                <div class="container">
+                    <h2 class="mb-4 text-primary" style="color: #80c2c8!important;">Nosotros</h2>
+                    <div class="row align-items-center">
+                        <!-- Image Section -->
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="/images/grilled-scallops-6609305_1280.jpg" alt="Mariscos frescos" class="img-fluid rounded shadow">
+                        </div>
+                        <!-- Text Section -->
+                        <div class="col-md-6">
+                            <p class="mb-3">
+                                En <strong>MariscosJP</strong>, desde 2004 hemos trabajado con un propósito claro: llevar los mejores mariscos del mar a tu mesa. Somos una empresa familiar apasionada por la frescura, la calidad y el servicio al cliente, valores que han sido nuestra brújula durante más de dos décadas.
+                            </p>
+                            <p class="mb-3">
+                                Nuestros productos son cuidadosamente seleccionados para garantizar que cumplan con los estándares más altos. Trabajamos directamente con pescadores y proveedores locales, promoviendo prácticas sostenibles que respeten el ecosistema marino.
+                            </p>
+                            <p class="mb-4">
+                                Hoy, con la creación de nuestra página web, seguimos evolucionando para estar más cerca de ti. Nos enorgullece ofrecerte una experiencia moderna, sencilla y conveniente para que puedas disfrutar del sabor auténtico del mar desde la comodidad de tu hogar.
+                            </p>
+                            <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6651.907375039591!2d-70.68906893565673!3d-33.52858971637604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662db0eda96c3dd%3A0x58adc320ee55559e!2sTerminal%20Pesquero%20de%20Santiago!5e0!3m2!1ses!2scl!4v1727794372240!5m2!1ses!2scl"
