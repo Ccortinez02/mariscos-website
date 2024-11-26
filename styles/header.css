@@ -56,6 +56,9 @@ header {
     color: #80c2c8;
 }
 
+#nav-link-display:hover{
+    color: #80c2c8;
+}
 /* Estilos para el menú desplegable */
 .nav-item {
     position: relative;
