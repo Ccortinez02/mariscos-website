@@ -50,7 +50,7 @@
             </nav>
             <div class="number"><a href="https://wa.me/56912345678"><i class="fa-brands fa-whatsapp"></i></a></div>
         </header>
-        
+
 
         <!-- Banner principal con texto y botón -->
         <div class="banner-main">
@@ -76,39 +76,74 @@
                 <button>VER TODO</button>
             </div>
         </section>
-        <div class="carrusel">
-            <h2>Productos Destacados</h2> <!-- hacer que sea compatibles con dispositivos moviles, @media-->
-            <!-- BANNER DE A 1 PRODUCTO -->
-            <div class="cards">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="/images/calamar.jpg" alt="Calamar">
-                    <div class="card-body">
-                        <h5 class="card-title">Calamar Premium</h5>
-                        <br>
-                        <p class="newPrice">25.000</p>
-                        <a href="/templates/productos/calamar.html" class="btn btn-primary" id="btn-buy">Comprar</a>
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <h2>Productos Destacados</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex cards">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" src="/images/calamar.jpg" alt="Calamar">
+                            <div class="card-body">
+                                <h5 class="card-title">Calamar Premium</h5>
+                                <p class="oldPrice">30.000</p>
+                                <p class="newPrice">25.000</p>
+                                <a href="/templates/productos/calamar.html" class="btn" id="btn-buy">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" src="/images/choritos.jpeg" alt="Choritos">
+                            <div class="card-body">
+                                <h5 class="card-title">Choritos Premium</h5>
+                                <p class="oldPrice">18.000</p>
+                                <p class="newPrice">14.990</p>
+                                <a href="/templates/productos/choritos.html" class="btn" id="btn-buy">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" src="/images/jaiba.jpg" alt="Jaiba">
+                            <div class="card-body">
+                                <h5 class="card-title">Jaiba Premium</h5>
+                                <p class="oldPrice">20.000</p>
+                                <p class="newPrice">14.990</p>
+                                <a href="/templates/productos/jaiba.html" class="btn" id="btn-buy">Comprar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="/images/choritos.jpeg" alt="Choritos">
-                    <div class="card-body">
-                        <h5 class="card-title">Choritos Premium</h5>
-                        <br>
-                        <p class="newPrice">14.990</p>
-                        <a href="/templates/productos/choritos.html" class="btn btn-primary" id="btn-buy">Comprar</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="/images/jaiba.jpg" alt="mariscosSurtidos">
-                    <div class="card-body">
-                        <h5 class="card-title">Jaiba Premium </h5>
-                        <br>
-                        <p class="newPrice">14.990</p>
-                        <a href="/templates/productos/jaiba.html" class="btn btn-primary" id="btn-buy">Comprar</a>
+                <div class="carousel-item">
+                    <div class="d-flex cards">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" src="/images/producto4.jpg" alt="Producto 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 4</h5>
+                                <p class="oldPrice">22.000</p>
+                                <p class="newPrice">19.990</p>
+                                <a href="/templates/productos/producto4.html" class="btn" id="btn-buy">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" src="/images/producto5.jpg" alt="Producto 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 5</h5>
+                                <p class="oldPrice">25.000</p>
+                                <p class="newPrice">22.000</p>
+                                <a href="/templates/productos/producto5.html" class="btn" id="btn-buy">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" src="/images/producto6.jpg" alt="Producto 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Producto 6</h5>
+                                <p class="oldPrice">24.000</p>
+                                <p class="newPrice">20.000</p>
+                                <a href="/templates/productos/producto6.html" class="btn" id="btn-buy">Comprar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="top-sell">
             <h2>Top Semanal</h2>
             <div class="cards">
