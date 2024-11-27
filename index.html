@@ -50,20 +50,7 @@
             </nav>
             <div class="number"><a href="https://wa.me/56912345678"><i class="fa-brands fa-whatsapp"></i></a></div>
         </header>
-        <script>
-            // JavaScript para el menú hamburguesa
-            function toggleMenu() {
-                document.querySelector('.header-links').classList.toggle('active');
-            }
-
-            // JavaScript para los menús desplegables
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', function () {
-                    this.parentElement.classList.toggle('open');
-                });
-            });
-
-        </script>
+        
 
         <!-- Banner principal con texto y botón -->
         <div class="banner-main">
@@ -188,6 +175,20 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/192ba4ed31.js" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript para el menú hamburguesa
+        function toggleMenu() {
+            document.querySelector('.header-links').classList.toggle('active');
+        }
+
+        // JavaScript para los menús desplegables
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                this.parentElement.classList.toggle('open');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
