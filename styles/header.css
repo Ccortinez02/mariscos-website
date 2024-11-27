@@ -40,7 +40,7 @@ header {
     display: flex;
     gap: 20px;
     list-style: none;
-    flex: 2; /* Asigna más espacio al menú */
+    flex: 3; /* Asigna más espacio al menú */
     justify-content: center; /* Centra el menú */
 }
 
