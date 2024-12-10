@@ -1,11 +1,11 @@
 .cards {
     margin-top: 40px;
-    height: auto; /* Ajustar la altura automáticamente */
     display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap; /* Permitir que las tarjetas se ajusten a nuevas filas si es necesario */
+    justify-content: center; /* Centra las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se distribuyan en varias filas */
     gap: 20px; /* Espacio entre las tarjetas */
+    z-index: 2!important;
+    width: 100%; /* Asegura que las tarjetas ocupen el ancho completo del contenedor */
 }
 
 .cards img {
@@ -41,39 +41,51 @@
     border: white;
 }
 
+.carousel-item {
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea verticalmente */
+    min-height: 350px; /* Ajusta la altura mínima */
+    width: 100%; /* Asegura que el carrusel ocupe el 100% del ancho */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Asegura que la imagen se ajuste dentro del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
 /* Ajustes para móviles */
 @media (max-width: 768px) {
     .carousel-inner, .top-sell .cards {
-        flex-direction: column; /* Cambiar a disposición en columna */
-        align-items: center; /* Centrar las tarjetas */
+        flex-direction: column;
+        align-items: center;
     }
 
     .cards {
-        height: auto; /* Dejar que la altura se ajuste automáticamente */
-        gap: 15px; /* Reducir espacio entre tarjetas */
+        gap: 15px; /* Reducción del espacio entre tarjetas */
     }
 
     .card {
-        width: 90%; /* Aumentar el ancho de las tarjetas para ocupar más espacio */
-        margin: 0 auto; /* Centrar las tarjetas */
+        width: 90%; /* Ampliar el ancho de las tarjetas */
+        margin: 0 auto;
     }
 
     .cards img {
-        height: 12rem; /* Reducir la altura de las imágenes */
+        height: 12rem; /* Ajustar la altura de las imágenes para que no sean tan grandes */
     }
 
     .newPrice {
-        font-size: 18px; /* Reducir tamaño del texto */
+        font-size: 18px; /* Ajustar el tamaño del precio */
     }
 
     #btn-buy {
-        font-size: 16px; /* Ajustar tamaño del botón */
-        padding: 8px 15px; /* Reducir padding en botones */
+        font-size: 16px;
+        padding: 8px 15px; /* Reducir padding */
     }
 
     h2 {
-        font-size: 1.5rem; /* Ajustar tamaño de títulos */
-        text-align: center; /* Centrar el título */
-        margin-bottom: 20px; /* Espacio inferior */
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }

@@ -42,7 +42,9 @@ main {
         align-items: center;
     }
 
-    /* Otros ajustes para optimizar la visualización */
+    main{
+        width: 100%;
+    }
 }
 
 .btn-wtsp {
