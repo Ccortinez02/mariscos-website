@@ -85,3 +85,20 @@ section.menu {
 .mariscos button:hover, .pescados button:hover {
     background-color: #f0f0f0;
 }
+
+/* Responsive: Ocultar columna grande en móviles */
+@media (max-width: 768px) {
+    .imagen-menu {
+        display: none; /* Ocultar la imagen */
+    }
+
+    section.menu {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto; /* Ajuste automático de filas */
+    }
+
+    .mariscos, .pescados {
+        grid-column: 1 / -1; /* Abarcar toda la fila */
+        padding: 20px; /* Reducir padding */
+    }
+}

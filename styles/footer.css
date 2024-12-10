@@ -24,36 +24,32 @@ ul li a:hover {
     width: 300px;
     text-align: center;
     max-width: 300px;
-}
-
-.info {
-    text-align: center; /* Centra el contenido dentro de .info */
+    margin-bottom: 20px; /* Espacio entre secciones */
 }
 
 .info ul {
-    list-style-position: inside; /* Asegura que los bullets sigan dentro del contenedor centrado */
-    padding: 0; /* Elimina el padding que puede descentrar la lista */
-    margin-left: 70px;
+    list-style: none; /* Elimina los bullets de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina los márgenes */
 }
 
 .info ul li {
-    display: inline-block; /* Asegura que los ítems de la lista se comporten correctamente */
-    text-align: left; /* Mantiene el texto de los elementos alineado a la izquierda */
-    width: 100%; /* Asegura que los ítems ocupen el ancho completo del contenedor */
+    margin-bottom: 10px; /* Espacio entre los ítems */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
-
 
 .redes a i {
     font-size: 30px;
     text-decoration: none;
     color: black;
-    font-size: 38px;
+    transition: color 0.3s ease; /* Efecto de transición para el hover */
 }
 
 .icon-redes {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los íconos pasen a la siguiente fila si no hay espacio */
+    justify-content: center;
+    gap: 15px; /* Espaciado entre íconos */
 }
 
 .icon-redes a i:hover {
@@ -64,17 +60,36 @@ ul li a:hover {
 @media (max-width: 768px) {
     .footer {
         flex-direction: column; /* Coloca los divs en una sola columna */
-        height: 900px; /* Ajusta la altura automáticamente para el contenido */
+        align-items: center; /* Centra los elementos en la pantalla */
+        height: auto; /* Altura ajustable al contenido */
+        padding-bottom: 20px; /* Espacio inferior para móviles */
     }
 
     .footer div {
-        width: 100%; /* Los divs ocuparán el 100% del ancho de la pantalla */
-        margin-bottom: 20px; /* Espacio entre los divs en pantallas pequeñas */
-        margin-left: 25%;
+        width: 90%; /* Los divs ocupan casi todo el ancho de la pantalla */
+        margin: 10px 0; /* Espacio vertical entre secciones */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+    }
+
+    .info ul li {
+        text-align: center; /* Centra los ítems de la lista en móviles */
     }
 
     .icon-redes {
-        max-width: 200px!important;
-        margin-left: 50px!important;
+        justify-content: center; /* Centra los íconos sociales */
+    }
+
+    .icon-redes a i {
+        font-size: 24px; /* Reduce el tamaño de los íconos en móviles */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Ajusta el tamaño de los títulos */
+        margin-bottom: 10px; /* Espacio inferior entre el título y el contenido */
+    }
+
+    h5 {
+        font-size: 1rem; /* Ajusta el tamaño del texto en la sección de contacto */
+        margin-bottom: 5px; /* Espacio entre líneas */
     }
 }

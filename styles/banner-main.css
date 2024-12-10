@@ -29,7 +29,6 @@
 .banner-main button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 1rem;
     z-index: 1;
     margin-left: 50px;
     border-radius: 15px;
@@ -48,6 +47,10 @@
 @media (max-width: 764px) {
     .banner-main h1{
         margin-top: 15rem;
+        font-size: 3rem;
+    }
+    .banner-main button{
+        font-size: 25px;
     }
     .banner-imagen{
         height: 1000px!important;
