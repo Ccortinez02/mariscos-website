@@ -95,6 +95,11 @@ header {
     .menu-toggle {
         display: block; /* Mostrar el botón de hamburguesa en móvil */
     }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
     .header-links {
         display: none; /* Ocultar el menú inicialmente en móvil */
