@@ -1,13 +1,13 @@
 .footer {
-    padding-top: 30px;
+    padding-top: 500px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-image: url(/images/footer.png);
+    background-image: url(/images/footer.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 710px;
     flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
 }
 
